@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Jewelry</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body"> 
+    <header class="header header-transparent">
+        <div class="container">
+            <div class="header__inner">
+                <button class="header__btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="13" viewBox="0 0 19 13" fill="none">
+                        <path d="M0 0H19V1H0V0Z" fill="black"/>
+                        <path d="M0 6H19V7H0V6Z" fill="black"/>
+                        <path d="M0 12H19V13H0V12Z" fill="black"/>
+                    </svg>
+                </button>
+                <a class="header__tel" href="tel:+34663286292">+34 663 28 62 92</a>
+                <a class="header__logo" href="index.html">
+                    <img src="img/logo.png" alt="">
+                    <img src="img/logo-white.png" alt="">
+                </a>
+                <div class="header__users">
+                    <button class="header__search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M2.97047 2.98974C4.56422 1.39599 6.72647 0.500488 8.98097 0.500488C11.2355 0.500488 13.397 1.39599 14.9915 2.98974C16.586 4.58349 17.4807 6.74574 17.4807 9.00024C17.4807 11.0875 16.7135 13.0952 15.3342 14.647L19.688 19.0007L18.9807 19.708L14.627 15.3542C13.0752 16.7327 11.0675 17.5007 8.98022 17.5007C6.72572 17.5007 4.56422 16.6052 2.96972 15.0115C1.37522 13.4177 0.480469 11.2555 0.480469 9.00099C0.480469 6.74649 1.37597 4.58499 2.96972 2.99049L2.97047 2.98974ZM8.98097 1.50024C6.99197 1.50024 5.08397 2.29074 3.67772 3.69699C2.27147 5.10324 1.48097 7.01124 1.48097 9.00024C1.48097 10.9892 2.27147 12.8972 3.67772 14.3035C5.08397 15.7097 6.99197 16.5002 8.98097 16.5002C10.97 16.5002 12.878 15.7097 14.2842 14.3035C15.6905 12.8972 16.481 10.9892 16.481 9.00024C16.481 7.01124 15.6905 5.10324 14.2842 3.69699C12.878 2.29074 10.97 1.50024 8.98097 1.50024Z" fill="black"/>
+                        </svg>
+                    </button>
+                    <a class="header__liked" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3035 0.500003L15.3048 0.5C16.9629 0.500002 18.5452 1.1809 19.7049 2.38517L19.7057 2.38597C20.8599 3.5899 21.5029 5.19411 21.4998 6.86191C21.5033 8.5296 20.8606 10.1338 19.7068 11.3379L19.7057 11.3391C18.9055 12.1688 18.1088 13.0149 17.3091 13.8642C15.6872 15.5867 14.0531 17.3222 12.3527 18.9601L12.3495 18.9631C11.5699 19.7012 10.335 19.6751 9.58899 18.9022L2.29389 11.3401C-0.0975369 8.86087 -0.0980371 4.86481 2.29284 2.38596C2.86046 1.79048 3.54302 1.31639 4.29921 0.992385C5.05589 0.668174 5.87053 0.501002 6.69374 0.501002C7.51695 0.501002 8.33159 0.668174 9.08827 0.992385C9.80265 1.29847 10.4514 1.7385 10.9995 2.28828C11.5484 1.7398 12.1971 1.30056 12.9111 0.994456C13.6672 0.670329 14.4809 0.502153 15.3035 0.500003ZM18.984 3.07815C18.0099 2.06701 16.6868 1.50018 15.3054 1.5C14.6177 1.50189 13.9373 1.64254 13.3052 1.91355C12.6728 2.18465 12.1017 2.5806 11.626 3.07769L11.6242 3.07961L11.3592 3.3536C11.2651 3.45089 11.1356 3.50587 11.0003 3.506C10.8649 3.50613 10.7353 3.45139 10.641 3.35428L10.3718 3.07691C9.89728 2.57892 9.32666 2.18245 8.69443 1.91157C8.06221 1.64068 7.38156 1.501 6.69374 1.501C6.00593 1.501 5.32528 1.64068 4.69305 1.91157C4.06083 2.18245 3.49019 2.57891 3.01575 3.07689L3.01354 3.0792C0.995515 5.17044 0.995407 8.55354 3.01361 10.6459L10.3085 18.2078C10.6722 18.5845 11.2782 18.5988 11.6607 18.2382C13.3435 16.6171 14.9471 14.9139 16.5581 13.2028C17.3617 12.3493 18.1671 11.4938 18.9852 10.6456C19.9601 9.62804 20.5029 8.27237 20.4998 6.86312V6.86097C20.5027 5.45146 19.9594 4.09563 18.984 3.07815Z" fill="black"/>
+                        </svg>
+                        <span>My favourites</span>
+                    </a>
+                    <button class="header__cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M10.2312 3.23249C9.76248 3.70124 9.49923 4.33724 9.49923 5.00024V5.50049H10.499V5.00024C10.499 4.60274 10.6572 4.22099 10.9385 3.93974C11.2197 3.65849 11.6015 3.50024 11.999 3.50024C12.3965 3.50024 12.7782 3.65849 13.0595 3.93974C13.3407 4.22099 13.499 4.60274 13.499 5.00024V5.50049H14.4987V5.00024C14.4987 4.33724 14.2355 3.70124 13.7667 3.23249C13.298 2.76374 12.662 2.50049 11.999 2.50049C11.336 2.50049 10.7 2.76374 10.2312 3.23249ZM6.71448 8.49974H17.2827C17.6412 8.49974 17.9877 8.62799 18.2592 8.86124C18.5307 9.09449 18.71 9.41699 18.764 9.77174L20.1492 18.7717C20.1822 18.9855 20.1687 19.2037 20.1087 19.4115C20.0487 19.6192 19.946 19.812 19.805 19.9762C19.664 20.1405 19.49 20.2725 19.2935 20.3625C19.097 20.4532 18.8832 20.4997 18.6672 20.4997H5.32773C5.11173 20.4997 4.89798 20.4532 4.70148 20.3625C4.50498 20.2717 4.33023 20.1405 4.18923 19.9762C4.04823 19.812 3.94473 19.6192 3.88548 19.4115C3.82623 19.2037 3.81198 18.9847 3.84498 18.7717L5.23023 9.77174C5.28498 9.41774 5.46423 9.09449 5.73648 8.86124C6.00873 8.62799 6.35523 8.49974 6.71373 8.49974H6.71448ZM6.71523 7.49999C6.11748 7.49924 5.53998 7.71299 5.08623 8.10224C4.63248 8.49149 4.33323 9.02924 4.24248 9.62024L2.85723 18.6202C2.80248 18.9765 2.82498 19.3402 2.92473 19.6875C3.02448 20.0347 3.19623 20.355 3.43098 20.6287C3.66573 20.9025 3.95673 21.1215 4.28448 21.2722C4.61223 21.423 4.96848 21.501 5.32848 21.501H18.6687C19.0287 21.501 19.385 21.4222 19.7127 21.2715C20.0405 21.1207 20.3307 20.901 20.5655 20.628C20.8002 20.3542 20.9727 20.0332 21.0717 19.6875C21.1707 19.3417 21.1932 18.9772 21.1385 18.621L19.7532 9.62099C19.6625 9.03149 19.3647 8.49299 18.911 8.10374C18.4572 7.71449 17.8805 7.50149 17.2827 7.50149H6.71523V7.49999Z" fill="black"/>
+                        </svg>
+                        <span>1</span>
+                    </button>
+                    <button class="header__login">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M8.81625 4.81799C9.66 3.97424 10.8045 3.50024 11.9985 3.50024C13.1925 3.50024 14.3363 3.97424 15.1807 4.81799C16.0245 5.66174 16.4985 6.80624 16.4985 8.00024C16.4985 9.19424 16.0245 10.338 15.1807 11.1825C14.916 11.4472 14.622 11.6752 14.3055 11.8642C15.4253 12.2265 16.4543 12.8497 17.3018 13.6972C18.708 15.1035 19.4985 17.0115 19.4985 19.0005V20.5005H18.4988V19.0005C18.4988 17.2762 17.814 15.6232 16.5952 14.4045C15.3765 13.1857 13.7227 12.501 11.9992 12.501C10.275 12.501 8.622 13.1857 7.40325 14.4045C6.1845 15.6232 5.49975 17.277 5.49975 19.0005V20.5005H4.5V19.0005C4.5 17.0115 5.2905 15.1035 6.69675 13.6972C7.54425 12.8497 8.57325 12.2265 9.693 11.8642C9.37725 11.6752 9.0825 11.4472 8.81775 11.1825C7.974 10.3387 7.5 9.19424 7.5 8.00024C7.5 6.80624 7.974 5.66249 8.81775 4.81799H8.81625ZM11.9985 4.49999C11.07 4.49999 10.1797 4.86899 9.5235 5.52524C8.86725 6.18149 8.49825 7.07174 8.49825 8.00024C8.49825 8.92874 8.86725 9.81899 9.5235 10.4752C10.1797 11.1315 11.07 11.5005 11.9985 11.5005C12.927 11.5005 13.8172 11.1315 14.4735 10.4752C15.1297 9.81899 15.4987 8.92874 15.4987 8.00024C15.4987 7.07174 15.1297 6.18149 14.4735 5.52524C13.8172 4.86899 12.927 4.49999 11.9985 4.49999Z" fill="black"/>
+                        </svg>
+                        <span>Login</span>
+                    </button>
+                </div>    
+                <div class="header__mobile">
+                    <a class="header__mobile-tel" href="tel:+34663286292">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                            <path d="M4.12927 0.378071C4.57989 0.35558 5.03614 0.384497 5.42652 0.427069C6.36873 0.529885 7.08844 1.19899 7.39929 2.02553L8.13427 3.98144C8.30616 4.43849 8.34954 4.93409 8.26037 5.41444L7.88445 7.43059C7.75112 8.14628 7.81216 8.84591 8.13266 9.4106C8.83871 10.654 9.83233 11.6235 11.23 12.4862C11.8991 12.8991 12.7313 13.0059 13.5554 12.8461L15.3378 12.5007C15.8278 12.4059 16.3338 12.4493 16.8005 12.6268L19.048 13.4831C19.6577 13.7152 20.2424 14.1939 20.432 14.9289C20.6191 15.6575 20.7565 16.839 20.0866 17.8881C19.0271 19.546 17.1628 20.3235 15.1 19.8745C12.2292 19.2488 8.80899 17.9869 5.19679 14.3747C1.71712 10.895 1.15645 7.58481 0.762054 4.97265C0.472885 3.05851 1.34843 1.30743 2.8023 0.655192C3.21035 0.472051 3.68507 0.399759 4.12927 0.378071ZM4.18148 1.448C3.79914 1.46647 3.47462 1.52752 3.24007 1.63274C2.30509 2.05204 1.5894 3.28101 1.82074 4.8128C2.20469 7.35669 2.72118 10.3849 5.95425 13.6172C9.39135 17.0543 12.6116 18.2359 15.329 18.8279C16.9708 19.1853 18.3765 18.5765 19.1845 17.3113C19.6159 16.6366 19.5556 15.8181 19.395 15.1956C19.3171 14.8936 19.0576 14.6325 18.6673 14.4839L16.4198 13.6276C16.1402 13.5208 15.8358 13.4951 15.5418 13.5513L13.7594 13.8967C12.7256 14.0967 11.6091 13.9779 10.6677 13.3971C9.14796 12.4597 8.01217 11.3681 7.20089 9.93913C6.71974 9.09171 6.66753 8.11496 6.8314 7.23379L7.20732 5.21764C7.26113 4.92927 7.23463 4.63207 7.13181 4.35817L6.39684 2.40226C6.20486 1.89139 5.78878 1.54439 5.31004 1.49137C4.9534 1.45201 4.5574 1.42872 4.18228 1.44719L4.18148 1.448Z" fill="black"/>
+                        </svg>
+                    </a>
+                    <button class="header__cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M10.2312 3.23249C9.76248 3.70124 9.49923 4.33724 9.49923 5.00024V5.50049H10.499V5.00024C10.499 4.60274 10.6572 4.22099 10.9385 3.93974C11.2197 3.65849 11.6015 3.50024 11.999 3.50024C12.3965 3.50024 12.7782 3.65849 13.0595 3.93974C13.3407 4.22099 13.499 4.60274 13.499 5.00024V5.50049H14.4987V5.00024C14.4987 4.33724 14.2355 3.70124 13.7667 3.23249C13.298 2.76374 12.662 2.50049 11.999 2.50049C11.336 2.50049 10.7 2.76374 10.2312 3.23249ZM6.71448 8.49974H17.2827C17.6412 8.49974 17.9877 8.62799 18.2592 8.86124C18.5307 9.09449 18.71 9.41699 18.764 9.77174L20.1492 18.7717C20.1822 18.9855 20.1687 19.2037 20.1087 19.4115C20.0487 19.6192 19.946 19.812 19.805 19.9762C19.664 20.1405 19.49 20.2725 19.2935 20.3625C19.097 20.4532 18.8832 20.4997 18.6672 20.4997H5.32773C5.11173 20.4997 4.89798 20.4532 4.70148 20.3625C4.50498 20.2717 4.33023 20.1405 4.18923 19.9762C4.04823 19.812 3.94473 19.6192 3.88548 19.4115C3.82623 19.2037 3.81198 18.9847 3.84498 18.7717L5.23023 9.77174C5.28498 9.41774 5.46423 9.09449 5.73648 8.86124C6.00873 8.62799 6.35523 8.49974 6.71373 8.49974H6.71448ZM6.71523 7.49999C6.11748 7.49924 5.53998 7.71299 5.08623 8.10224C4.63248 8.49149 4.33323 9.02924 4.24248 9.62024L2.85723 18.6202C2.80248 18.9765 2.82498 19.3402 2.92473 19.6875C3.02448 20.0347 3.19623 20.355 3.43098 20.6287C3.66573 20.9025 3.95673 21.1215 4.28448 21.2722C4.61223 21.423 4.96848 21.501 5.32848 21.501H18.6687C19.0287 21.501 19.385 21.4222 19.7127 21.2715C20.0405 21.1207 20.3307 20.901 20.5655 20.628C20.8002 20.3542 20.9727 20.0332 21.0717 19.6875C21.1707 19.3417 21.1932 18.9772 21.1385 18.621L19.7532 9.62099C19.6625 9.03149 19.3647 8.49299 18.911 8.10374C18.4572 7.71449 17.8805 7.50149 17.2827 7.50149H6.71523V7.49999Z" fill="black"/>
+                        </svg>
+                        <span>1</span>
+                    </button>
+                </div>            
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <button class="header__bottom-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                        <path d="M7.55191e-05 13.4351L13.4351 2.99811e-05L14.1422 0.707137L0.707182 14.1422L7.55191e-05 13.4351Z" fill="black"/>
+                        <path d="M0.707107 0L14.1421 13.435L13.435 14.1421L0 0.707107L0.707107 0Z" fill="black"/>
+                    </svg>
+                </button>
+                <div class="header__bottom-inner">
+                    <nav class="header__menu">
+                        <ul>
+                            <li class="header__menu-link">
+                                <a href="#">Jewelry</a>
+                                <div class="header__menu-content">
+                                    <div class="container">
+                                        <div class="header__menu-inner header__menu-categories">
+                                            <button class="header__menu-box--back">Jewelry</button>
+                                            <div class="header__menu-left">
+                                                <img src="img/header/image-1.png" alt="">
+                                            </div>
+                                            <div class="header__menu-box">
+                                                <div class="header__menu-block">
+                                                    <div class="container">
+                                                        <h3 class="header__menu-title">Categories</h3>
+                                                        <ul class="header__menu-list">
+                                                            <li>
+                                                                <a href="#">Rings</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Bracelets</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Earrings</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Necklaces</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="header__menu-block">
+                                                    <div class="container">
+                                                        <h3 class="header__menu-title">Gift Ideas</h3>
+                                                        <ul class="header__menu-list">
+                                                            <li>
+                                                                <a href="#">Novelties</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Iconics</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Father’s Day</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Up to 1 500 €</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="header__menu-block">
+                                                    <div class="container">
+                                                        <h3 class="header__menu-title">Collections</h3>
+                                                        <ul class="header__menu-list">
+                                                            <li>
+                                                                <a href="#">Gatsby</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">My Twin</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Fiery</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Lucky Eye</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">My First Diamond</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Skinny</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Glam'Azone</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header__menu-link">
+                                <a href="#">Universo ECH</a>
+                                <div class="header__menu-content">
+                                    <div class="container">
+                                        <div class="header__menu-inner header__menu-images">
+                                            <button class="header__menu-box--back">Universo ECH</button>
+                                            <a class="header__menu-image" href="#">
+                                                <img src="img/header/image-2.png" alt="">
+                                                <h3>The ECH</h3>
+                                            </a>
+                                            <a class="header__menu-image" href="#">
+                                                <img src="img/header/image-3.png" alt="">
+                                                <h3>ECH expertise</h3>
+                                            </a>
+                                            <a class="header__menu-image" href="#">
+                                                <img src="img/header/image-4.png" alt="">
+                                                <h3>Elena Chernyavskaya</h3>
+                                            </a>
+                                            <a class="header__menu-image" href="#">
+                                                <img src="img/header/image-5.png" alt="">
+                                                <h3>The Iconic Move</h3>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header__menu-link">
+                                <a href="#">News</a>
+                                <div class="header__menu-content">
+                                    <div class="container">
+                                        <div class="header__menu-inner header__menu-images">
+                                            <button class="header__menu-box--back">News</button>
+                                            <a class="header__menu-image" href="#">
+                                                <img src="img/header/image-3.png" alt="">
+                                                <h3>ECH expertise</h3>
+                                            </a>
+                                            <a class="header__menu-image" href="#">
+                                                <img src="img/header/image-4.png" alt="">
+                                                <h3>Elena Chernyavskaya</h3>
+                                            </a>
+                                            <a class="header__menu-image" href="#">
+                                                <img src="img/header/image-5.png" alt="">
+                                                <h3>The Iconic Move</h3>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">Contact us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="header__search-form--inner">
+            <form class="header__search-form" action="#">
+                <div class="header__search-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M2.97047 2.98974C4.56422 1.39599 6.72647 0.500488 8.98097 0.500488C11.2355 0.500488 13.397 1.39599 14.9915 2.98974C16.586 4.58349 17.4807 6.74574 17.4807 9.00024C17.4807 11.0875 16.7135 13.0952 15.3342 14.647L19.688 19.0007L18.9807 19.708L14.627 15.3542C13.0752 16.7327 11.0675 17.5007 8.98022 17.5007C6.72572 17.5007 4.56422 16.6052 2.96972 15.0115C1.37522 13.4177 0.480469 11.2555 0.480469 9.00099C0.480469 6.74649 1.37597 4.58499 2.96972 2.99049L2.97047 2.98974ZM8.98097 1.50024C6.99197 1.50024 5.08397 2.29074 3.67772 3.69699C2.27147 5.10324 1.48097 7.01124 1.48097 9.00024C1.48097 10.9892 2.27147 12.8972 3.67772 14.3035C5.08397 15.7097 6.99197 16.5002 8.98097 16.5002C10.97 16.5002 12.878 15.7097 14.2842 14.3035C15.6905 12.8972 16.481 10.9892 16.481 9.00024C16.481 7.01124 15.6905 5.10324 14.2842 3.69699C12.878 2.29074 10.97 1.50024 8.98097 1.50024Z" fill="black"/>
+                    </svg>
+                </div>
+                <input class="header__search-input" type="text" placeholder="What are you looking for?">
+                <button class="header__search-reset" type="reset">Cancel</button>
+                <button class="header__search-close" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                        <path d="M7.55191e-05 13.4351L13.4351 2.99811e-05L14.1422 0.707137L0.707182 14.1422L7.55191e-05 13.4351Z" fill="black"/>
+                        <path d="M0.707107 0L14.1421 13.435L13.435 14.1421L0 0.707107L0.707107 0Z" fill="black"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </header>
+
+    <main class="main main-transparent">
+        <section class="heroPage">
+            <div class="container">
+                <div class="heroPage__inner">
+                    <div class="heroPage__image">
+                        <img src="img/jewelry.png" alt="">
+                    </div>
+                    <h1 class="heroPage__title title">Jewelry</h1>
+                    <p class="heroPage__name">Jewelry</p>
+                    <p class="heroPage__descr">Discover the collections of jewelry by ECH. An exceptional selection of minimalist, <br>timeless or contemporary designs. There is a unique ECH creation to suit every taste. <br>Rings, bracelets, necklaces and earrings, available in white gold, pink gold or yellow gold.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="navigation">
+            <div class="container">
+                <div class="navigation__inner">
+                    <ul class="breadcrumbs">
+                        <li>
+                            <a href="index.html">Home </a>
+                        </li>
+                        <li>
+                            <a class="active" href="jewelry.html">Jewelry</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="imagesBlock">
+            <div class="container">
+                <div class="imagesBlock__inner">
+                    <div class="imagesBlock__block">
+                        <a class="imagesBlock__item" href="#">
+                            <div class="imagesBlock__item-image">
+                                <img src="img/imagesBlock/4.png" alt="">
+                            </div>
+                            <h3 class="imagesBlock__item-title">Rings</h3>
+                        </a>
+                        <a class="imagesBlock__item" href="#">
+                            <div class="imagesBlock__item-image">
+                                <img src="img/imagesBlock/5.png" alt="">
+                            </div>
+                            <h3 class="imagesBlock__item-title">Rings</h3>
+                        </a>
+                        <a class="imagesBlock__item" href="#">
+                            <div class="imagesBlock__item-image">
+                                <img src="img/imagesBlock/6.png" alt="">
+                            </div>
+                            <h3 class="imagesBlock__item-title">Rings</h3>
+                        </a>
+                        <a class="imagesBlock__item" href="#">
+                            <div class="imagesBlock__item-image">
+                                <img src="img/imagesBlock/7.png" alt="">
+                            </div>
+                            <h3 class="imagesBlock__item-title">Rings</h3>
+                        </a>
+                        <a class="imagesBlock__item" href="#">
+                            <div class="imagesBlock__item-image">
+                                <img src="img/imagesBlock/8.png" alt="">
+                            </div>
+                            <h3 class="imagesBlock__item-title">Rings</h3>
+                        </a>
+                        <a class="imagesBlock__item" href="#">
+                            <div class="imagesBlock__item-image">
+                                <img src="img/imagesBlock/9.png" alt="">
+                            </div>
+                            <h3 class="imagesBlock__item-title">Rings</h3>
+                        </a>
+                        <a class="imagesBlock__item" href="#">
+                            <div class="imagesBlock__item-image">
+                                <img src="img/imagesBlock/10.png" alt="">
+                            </div>
+                            <h3 class="imagesBlock__item-title">Rings</h3>
+                        </a>
+                        <a class="imagesBlock__item" href="#">
+                            <div class="imagesBlock__item-image">
+                                <img src="img/imagesBlock/11.png" alt="">
+                            </div>
+                            <h3 class="imagesBlock__item-title">Rings</h3>
+                        </a>
+                        <a class="imagesBlock__item" href="#">
+                            <div class="imagesBlock__item-image">
+                                <img src="img/imagesBlock/4.png" alt="">
+                            </div>
+                            <h3 class="imagesBlock__item-title">Rings</h3>
+                        </a>
+                        <a class="imagesBlock__item" href="#">
+                            <div class="imagesBlock__item-image">
+                                <img src="img/imagesBlock/5.png" alt="">
+                            </div>
+                            <h3 class="imagesBlock__item-title">Rings</h3>
+                        </a>
+                        <a class="imagesBlock__item" href="#">
+                            <div class="imagesBlock__item-image">
+                                <img src="img/imagesBlock/6.png" alt="">
+                            </div>
+                            <h3 class="imagesBlock__item-title">Rings</h3>
+                        </a>
+                        <a class="imagesBlock__item" href="#">
+                            <div class="imagesBlock__item-image">
+                                <img src="img/imagesBlock/7.png" alt="">
+                            </div>
+                            <h3 class="imagesBlock__item-title">Rings</h3>
+                        </a>
+                        <a class="imagesBlock__item" href="#">
+                            <div class="imagesBlock__item-image">
+                                <img src="img/imagesBlock/8.png" alt="">
+                            </div>
+                            <h3 class="imagesBlock__item-title">Rings</h3>
+                        </a>
+                        <a class="imagesBlock__item" href="#">
+                            <div class="imagesBlock__item-image">
+                                <img src="img/imagesBlock/9.png" alt="">
+                            </div>
+                            <h3 class="imagesBlock__item-title">Rings</h3>
+                        </a>
+                        <a class="imagesBlock__item" href="#">
+                            <div class="imagesBlock__item-image">
+                                <img src="img/imagesBlock/10.png" alt="">
+                            </div>
+                            <h3 class="imagesBlock__item-title">Rings</h3>
+                        </a>
+                        <a class="imagesBlock__item" href="#">
+                            <div class="imagesBlock__item-image">
+                                <img src="img/imagesBlock/11.png" alt="">
+                            </div>
+                            <h3 class="imagesBlock__item-title">Rings</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="advantages">
+            <div class="container">
+                <div class="advantages__inner">
+                    <h2 class="advantages__title animate-item">E-boutique benefits</h2>
+                    <div class="advantages__block">
+                        <div class="advantages__item">
+                            <div class="advantages__item-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="41" viewBox="0 0 42 41" fill="none">
+                                    <path d="M11.6055 35.0205H30.3976V36.7284H11.6055V35.0205Z" fill="black"/>
+                                    <path d="M4.94209 5.9797C4.89725 5.9797 4.85369 5.99763 4.82166 6.02966C4.78962 6.0617 4.77169 6.10526 4.77169 6.1501V28.0172C4.77169 28.062 4.78962 28.1056 4.82166 28.1376C4.85369 28.1697 4.89725 28.1876 4.94209 28.1876H37.0592C37.104 28.1876 37.1476 28.1697 37.1796 28.1376C37.2117 28.1056 37.2296 28.062 37.2296 28.0172V6.1501C37.2296 6.10526 37.2117 6.0617 37.1796 6.02966C37.1476 5.99763 37.104 5.9797 37.0592 5.9797H4.94209ZM3.61344 4.82145C3.96578 4.4691 4.44369 4.27051 4.94209 4.27051H37.0592C37.5576 4.27051 38.0355 4.4691 38.3878 4.82145C38.7402 5.17379 38.9388 5.6517 38.9388 6.1501V28.0172C38.9388 28.5156 38.7402 28.9935 38.3878 29.3458C38.0355 29.6982 37.5576 29.8968 37.0592 29.8968H4.94209C4.44369 29.8968 3.96578 29.6982 3.61344 29.3458C3.26109 28.9935 3.0625 28.5156 3.0625 28.0172V6.1501C3.0625 5.6517 3.26109 5.17379 3.61344 4.82145Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <h3 class="advantages__item-title">Contact us</h3>
+                            <p class="advantages__item-descr">ECH adviser is available by email to respond to all your questions.</p>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantages__item-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="41" viewBox="0 0 42 41" fill="none">
+                                    <path d="M11.1489 26.0222C11.9497 25.2214 13.0362 24.7717 14.1688 24.7717C15.3015 24.7717 16.388 25.2214 17.1888 26.0222C17.9895 26.823 18.4392 27.9095 18.4392 29.0421C18.4392 30.1748 17.9895 31.2613 17.1888 32.062C16.388 32.8628 15.3015 33.3125 14.1688 33.3125C13.0362 33.3125 11.9497 32.8628 11.1489 32.062C10.3482 31.2613 9.89844 30.1748 9.89844 29.0421C9.89844 27.9095 10.3482 26.823 11.1489 26.0222ZM14.1688 26.4796C13.4898 26.4796 12.8376 26.75 12.3572 27.2304C11.8767 27.7109 11.6063 28.3631 11.6063 29.0421C11.6063 29.7212 11.8767 30.3734 12.3572 30.8538C12.8376 31.3343 13.4898 31.6046 14.1688 31.6046C14.8479 31.6046 15.5001 31.3343 15.9805 30.8538C16.461 30.3734 16.7313 29.7212 16.7313 29.0421C16.7313 28.3631 16.461 27.7109 15.9805 27.2304C15.5001 26.75 14.8479 26.4796 14.1688 26.4796ZM28.2318 26.0222C29.0326 25.2214 30.1191 24.7717 31.2518 24.7717C32.3844 24.7717 33.4709 25.2214 34.2717 26.0222C35.0724 26.823 35.5222 27.9095 35.5222 29.0421C35.5222 30.1748 35.0724 31.2613 34.2717 32.062C33.4709 32.8628 32.3844 33.3125 31.2518 33.3125C30.1191 33.3125 29.0326 32.8628 28.2318 32.062C27.4311 31.2613 26.9813 30.1748 26.9813 29.0421C26.9813 27.9095 27.4311 26.823 28.2318 26.0222ZM31.2518 26.4796C30.5727 26.4796 29.9205 26.75 29.4401 27.2304C28.9596 27.7109 28.6893 28.3631 28.6893 29.0421C28.6893 29.7212 28.9596 30.3734 29.4401 30.8538C29.9205 31.3343 30.5727 31.6046 31.2518 31.6046C31.9308 31.6046 32.583 31.3343 33.0634 30.8538C33.5439 30.3734 33.8143 29.7212 33.8143 29.0421C33.8143 28.3631 33.5439 27.7109 33.0634 27.2304C32.583 26.75 31.9308 26.4796 31.2518 26.4796Z" fill="black"/>
+                                    <path d="M1.35547 9.39551H25.1009C25.5993 9.39551 26.0772 9.5941 26.4295 9.94645C26.7819 10.2988 26.9805 10.7767 26.9805 11.2751V29.0422C26.9805 29.5137 26.5974 29.8968 26.1259 29.8968H16.815V28.1889H25.2713V11.2764C25.2713 11.2315 25.2533 11.188 25.2213 11.1559C25.1893 11.1239 25.1457 11.106 25.1009 11.106H1.35547V9.39807V9.39551ZM6.48047 18.7922V28.0172C6.48047 28.039 6.48431 28.062 6.49328 28.0825C6.50225 28.103 6.51506 28.1223 6.53044 28.1376C6.54581 28.153 6.56503 28.1658 6.58553 28.1748C6.60603 28.1838 6.62909 28.1876 6.65088 28.1876H11.0071V29.8955H6.65088C6.40359 29.8955 6.16016 29.8468 5.93209 29.752C5.70403 29.6572 5.49647 29.5188 5.32222 29.3446C5.14797 29.1703 5.00959 28.9628 4.91478 28.7347C4.81997 28.5066 4.77128 28.2619 4.77128 28.0159V18.7909H6.47919L6.48047 18.7922Z" fill="black"/>
+                                    <path d="M3.0625 14.5205H11.6046V16.2284H3.0625V14.5205Z" fill="black"/>
+                                    <path d="M35.2642 16.2296H26.125V14.5217H35.2642C36.2763 14.5217 37.195 15.1175 37.6063 16.0439L40.425 22.386C40.5711 22.714 40.6454 23.0677 40.6454 23.4264V27.3342C40.6454 28.75 39.4987 29.8967 38.0829 29.8967H34.6658V28.1888H38.0829C38.5544 28.1888 38.9375 27.8057 38.9375 27.3342V23.4264C38.9375 23.3073 38.9119 23.1894 38.8645 23.0792L36.0457 16.737C35.9086 16.4282 35.6024 16.2296 35.2654 16.2296H35.2642Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <h3 class="advantages__item-title">Free delivery and returns</h3>
+                            <p class="advantages__item-descr">ECH offers free delivery and returns on all online orders</p>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantages__item-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="41" viewBox="0 0 42 41" fill="none">
+                                    <path d="M17.1367 12.8662H26.568L23.4789 18.2154C22.755 19.4685 20.9472 19.4685 20.2245 18.2154L17.1367 12.8662ZM21.7044 17.3608C21.7697 17.4749 21.935 17.4749 22.0003 17.3608L23.6096 14.5741H20.0964L21.7044 17.3608Z" fill="black"/>
+                                    <path d="M36.375 25.411V31.0703C36.375 33.9006 34.0803 36.1953 31.25 36.1953H12.4579C9.62762 36.1953 7.33291 33.9006 7.33291 31.0703V25.411H36.375ZM5.625 23.7031V31.0703C5.625 34.8436 8.68463 37.9032 12.4579 37.9032H31.25C35.0233 37.9032 38.0829 34.8436 38.0829 31.0703V23.7031H5.625Z" fill="black"/>
+                                    <path d="M33.7644 23.703C34.2448 23.4365 34.5856 22.9458 34.6382 22.3641L35.5325 12.5805C35.8976 8.57787 32.747 5.1249 28.7278 5.1249H14.9838C10.9645 5.1249 7.81263 8.57659 8.17907 12.5805L9.07338 22.3641C9.12592 22.9458 9.46673 23.4378 9.9472 23.703H7.70117C7.52435 23.3404 7.41032 22.942 7.37188 22.5191L6.47757 12.7355C6.02017 7.73224 9.96001 3.41699 14.9838 3.41699H28.7278C33.7515 3.41699 37.6914 7.73224 37.234 12.7355L36.3409 22.5191C36.3025 22.942 36.1872 23.3404 36.0117 23.703H33.7644Z" fill="black"/>
+                                    <path d="M21.8533 19.6455C19.4945 19.6455 17.5829 21.5571 17.5829 23.9159H15.875C15.875 20.6141 18.5515 17.9363 21.8546 17.9363C25.1577 17.9363 27.8342 20.6128 27.8342 23.9159H26.1263C26.1263 21.5571 24.2147 19.6455 21.8559 19.6455H21.8533Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <h3 class="advantages__item-title">An exclusive gift box</h3>
+                            <p class="advantages__item-descr">Your ECH order will be presented in iconic gift packaging</p>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantages__item-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="41" viewBox="0 0 42 41" fill="none">
+                                    <path d="M4.313 8.938C5.11378 8.13722 6.20028 7.6875 7.33291 7.6875H34.6658C35.7984 7.6875 36.8849 8.13722 37.6857 8.938C38.4865 9.73878 38.9362 10.8253 38.9362 11.9579V19.6454H37.2283V16.2283H9.89541V14.5204H37.2283V11.9579C37.2283 11.2788 36.958 10.6267 36.4775 10.1462C35.997 9.66575 35.3449 9.39541 34.6658 9.39541H7.33291C6.65384 9.39541 6.00169 9.66575 5.52122 10.1462C5.04075 10.6267 4.77041 11.2788 4.77041 11.9579V29.0408C4.77041 29.7199 5.04075 30.372 5.52122 30.8525C6.00169 31.333 6.65384 31.6033 7.33291 31.6033H21.8533V33.3112H7.33291C6.20028 33.3112 5.11378 32.8615 4.313 32.0607C3.51222 31.2599 3.0625 30.1734 3.0625 29.0408V11.9579C3.0625 10.8253 3.51222 9.73878 4.313 8.938Z" fill="black"/>
+                                    <path d="M25.4817 35.8749H27.0397L29.1167 32.3899L31.1116 35.8749H32.6696L29.9226 31.1189L32.5466 26.7588H30.9886L29.1705 29.8479L27.3934 26.7588H25.8354L28.3505 31.1189L25.4817 35.8749Z" fill="black"/>
+                                    <path d="M35.074 29.083C35.074 29.0279 35.1419 28.5359 35.4571 28.2079C35.7582 27.894 36.14 27.8389 36.468 27.8389C36.7409 27.8389 37.124 27.8799 37.4379 28.181C37.5878 28.3309 37.7928 28.6179 37.7928 29.0971C37.7928 29.5071 37.6558 29.8492 37.4379 30.067C37.2329 30.272 36.8639 30.4629 36.2758 30.4629H36.0849V31.6378H36.3578C36.6448 31.6378 37.1368 31.6647 37.5327 32.0478C37.8877 32.3899 37.9427 32.8268 37.9427 33.1279C37.9427 33.7429 37.7237 34.167 37.4648 34.413C37.2188 34.6321 36.8229 34.7961 36.3988 34.7961C35.8248 34.7961 35.4827 34.5642 35.2918 34.3861C35.0599 34.167 34.8678 33.8121 34.7998 33.4021H33.4609C33.5288 34.0991 33.8299 34.823 34.2399 35.2612C34.828 35.8903 35.5788 36.0261 36.2758 36.0261C36.9869 36.0261 37.8479 35.889 38.5039 35.233C38.9408 34.7961 39.2829 34.0991 39.2829 33.1971C39.2829 32.6782 39.1599 32.1721 38.8998 31.789C38.7499 31.5571 38.4629 31.2419 37.9978 31.0651C38.2579 30.928 38.5718 30.6961 38.8178 30.3002C39.0497 29.9171 39.1317 29.5353 39.1317 29.0971C39.1317 28.4411 38.9537 27.853 38.4757 27.361C37.8877 26.746 37.2048 26.6089 36.5078 26.6089C35.9068 26.6089 35.1407 26.705 34.5128 27.3059C34.0887 27.7159 33.7748 28.345 33.7338 29.083H35.074Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <h3 class="advantages__item-title">Pay in instalments</h3>
+                            <p class="advantages__item-descr">Pay in instalment with Alma</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cart">
+            <div class="cart__inner">
+                <button class="cart__close"></button>
+                <h2 class="cart__title title">My Cart</h2>
+                <div class="cart__empty" style="display: none;">
+                    <h3 class="cart__empty-title title">You have no items in your shopping cart.</h3>
+                    <button class="cart__empty-btn btn">Continue buying</button>
+                </div>
+                <div class="cart__content">
+                    <div class="cart__top">
+                        <div class="cart__block">
+                            <div class="cart__item">
+                                <a class="cart__item-image" href="#">
+                                    <img src="img/selection/1.png" alt="">
+                                </a>
+                                <div class="cart__item-content">
+                                    <a class="cart__item-title" href="#">
+                                        <h3>maxiFLY Essential Necklace with Full Pavé Diamonds</h3>
+                                    </a>
+                                    <p class="cart__item-descr">White Gold Diamond Necklace</p>
+                                    <p class="cart__item-quantity">Quantity: 1</p>
+                                    <p class="cart__item-price">1 735,00 €</p>
+                                </div>
+                                <button class="cart__item-delete">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__bottom">
+                        <div class="cart__subtotal">
+                            <p class="cart__subtotal-title">Subtotal</p>
+                            <p class="cart__subtotal-price">1 735,00 €</p>
+                        </div>
+                        <p class="cart__bottom-descr">VAT included <br>Free standard delivery</p>
+                        <div class="cart__bottom-buttons">
+                            <a class="cart__bottom-btn btn-2" href="#">go to checkout</a>
+                            <button class="cart__bottom-close btn">continue shopping</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <a class="footer__logo" href="index.html">
+                    <img src="img/footer-logo.png" alt="">
+                </a>
+                <div class="footer__content">
+                    <div class="footer__block">
+                        <h3 class="footer__block-title">echjewelry</h3>
+                        <ul class="footer__block-list">
+                            <li>
+                                <a href="#">Jewelry</a>
+                            </li>
+                            <li>
+                                <a href="#">Universo ECH</a>
+                            </li>
+                            <li>
+                                <a href="#">News</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__block">
+                        <h3 class="footer__block-title">CUSTOMER SERVICE</h3>
+                        <ul class="footer__block-list">
+                            <li>
+                                <a href="#">Delivery & returns</a>
+                            </li>
+                            <li>
+                                <a href="#">My account</a>
+                            </li>
+                            <li>
+                                <a href="#">Advice & services</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__block">
+                        <h3 class="footer__block-title">Contact Info</h3>
+                        <ul class="footer__block-list">
+                            <li>
+                                <p>Passeig de Garcia Fària, 57-59 Bajos. Barcelona, 08019</p>
+                            </li>
+                            <li>
+                                <a href="tel:+34663286292">+34 663 28 62 92</a>
+                            </li>
+                            <li>
+                                <a href="mailto:hello@echjewelry.com">hello@echjewelry.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__block">
+                        <h3 class="footer__block-title">NEWS</h3>
+                        <p class="footer__block-name">Subscribe to the newsletter</p>
+                        <div class="footer__block-socials">
+                            <a href="#" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                    <path d="M8.05563 8.99997H4.05563C3.92302 8.99997 3.79584 9.05265 3.70207 9.14642C3.6083 9.24019 3.55563 9.36736 3.55563 9.49997V21.5C3.55563 21.6326 3.6083 21.7598 3.70207 21.8535C3.79584 21.9473 3.92302 22 4.05563 22H8.05563C8.18823 22 8.31541 21.9473 8.40918 21.8535C8.50295 21.7598 8.55563 21.6326 8.55563 21.5V9.49997C8.55563 9.36736 8.50295 9.24019 8.40918 9.14642C8.31541 9.05265 8.18823 8.99997 8.05563 8.99997ZM7.55563 21H4.55563V9.99997H7.55563V21ZM18.5556 8.99997C17.4706 8.99997 16.4156 9.35797 15.5556 10.019V9.49997C15.5556 9.36736 15.5029 9.24019 15.4092 9.14642C15.3154 9.05265 15.1882 8.99997 15.0556 8.99997H11.0556C10.923 8.99997 10.7958 9.05265 10.7021 9.14642C10.6083 9.24019 10.5556 9.36736 10.5556 9.49997V21.5C10.5556 21.6326 10.6083 21.7598 10.7021 21.8535C10.7958 21.9473 10.923 22 11.0556 22H15.0556C15.1882 22 15.3154 21.9473 15.4092 21.8535C15.5029 21.7598 15.5556 21.6326 15.5556 21.5V16C15.5556 15.6021 15.7137 15.2206 15.995 14.9393C16.2763 14.658 16.6578 14.5 17.0556 14.5C17.4535 14.5 17.835 14.658 18.1163 14.9393C18.3976 15.2206 18.5556 15.6021 18.5556 16V21.5C18.5556 21.6326 18.6083 21.7598 18.7021 21.8535C18.7958 21.9473 18.923 22 19.0556 22H23.0556C23.1882 22 23.3154 21.9473 23.4092 21.8535C23.5029 21.7598 23.5556 21.6326 23.5556 21.5V14C23.554 12.6744 23.0267 11.4035 22.0894 10.4662C21.1521 9.52886 19.8812 9.00156 18.5556 8.99997ZM22.5556 21H19.5556V16C19.5556 15.3369 19.2922 14.701 18.8234 14.2322C18.3546 13.7634 17.7187 13.5 17.0556 13.5C16.3926 13.5 15.7567 13.7634 15.2879 14.2322C14.819 14.701 14.5556 15.3369 14.5556 16V21H11.5556V9.99997H14.5556V11.203C14.5556 11.3065 14.5877 11.4075 14.6476 11.4921C14.7074 11.5766 14.7921 11.6404 14.8897 11.6748C14.9874 11.7091 15.0934 11.7123 15.193 11.6839C15.2925 11.6554 15.3808 11.5967 15.4456 11.516C15.9592 10.865 16.663 10.3906 17.459 10.1588C18.2551 9.92698 19.1036 9.94936 19.8863 10.2228C20.669 10.4963 21.3469 11.0072 21.8254 11.6842C22.3039 12.3613 22.5592 13.1709 22.5556 14V21ZM6.42363 2.00197C6.3061 1.99438 6.18823 1.99371 6.07063 1.99997C5.69639 1.97451 5.32092 2.02616 4.96746 2.15171C4.614 2.27727 4.29009 2.47406 4.01578 2.7299C3.74147 2.98574 3.52261 3.29518 3.37277 3.63904C3.22292 3.98291 3.14527 4.35388 3.14463 4.72897C3.14152 5.10015 3.2147 5.46801 3.35963 5.80974C3.50456 6.15147 3.71814 6.45978 3.98714 6.71556C4.25614 6.97134 4.57481 7.16913 4.92341 7.29666C5.272 7.4242 5.64308 7.47876 6.01363 7.45697H6.04163C6.39981 7.48206 6.75942 7.43634 7.09993 7.32245C7.44045 7.20855 7.75519 7.0287 8.0262 6.79316C8.29721 6.55763 8.51917 6.27102 8.67941 5.9497C8.83966 5.62839 8.93504 5.27865 8.96013 4.92047C8.98521 4.56229 8.9395 4.20268 8.8256 3.86217C8.7117 3.52165 8.53185 3.2069 8.29632 2.9359C8.06078 2.66489 7.77417 2.44293 7.45286 2.28268C7.13154 2.12244 6.78181 2.02706 6.42363 2.00197ZM6.38863 6.45997C6.27329 6.47064 6.15763 6.46964 6.04163 6.45697H6.01363C5.77295 6.47507 5.53115 6.44277 5.30366 6.36216C5.07617 6.28155 4.86799 6.15439 4.69241 5.9888C4.51683 5.8232 4.3777 5.62282 4.28392 5.40044C4.19013 5.17805 4.14375 4.93856 4.14773 4.69724C4.15171 4.45592 4.20596 4.21808 4.30703 3.99891C4.40809 3.77974 4.55375 3.58405 4.73469 3.42434C4.91564 3.26462 5.1279 3.14439 5.35792 3.07133C5.58795 2.99826 5.83068 2.97396 6.07063 2.99997C6.52945 2.9578 6.98623 3.09963 7.34049 3.39425C7.69475 3.68887 7.91746 4.11215 7.95963 4.57097C8.0018 5.0298 7.85997 5.48658 7.56535 5.84084C7.27073 6.19509 6.84745 6.4178 6.38863 6.45997Z" fill="white"/>
+                                </svg>
+                            </a>
+                            <a href="#" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                    <path d="M8.55269 14.5C5.55269 10 10.0147 6.5 13.0527 6.5C16.0907 6.5 18.5527 8.154 18.5527 12C18.5527 15.038 16.5527 17 14.5527 17C12.5527 17 11.5527 15 12.0527 12M12.5527 10L9.55269 21.5" stroke="white" stroke-linecap="square" stroke-linejoin="round"/>
+                                    <path d="M12.5547 22C18.0777 22 22.5547 17.523 22.5547 12C22.5547 6.477 18.0777 2 12.5547 2C7.03169 2 2.55469 6.477 2.55469 12C2.55469 17.523 7.03169 22 12.5547 22Z" stroke="white" stroke-linecap="square" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a href="#" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                    <path d="M17.5547 2H14.5547C13.2286 2 11.9568 2.52678 11.0192 3.46447C10.0815 4.40215 9.55469 5.67392 9.55469 7V10H6.55469V14H9.55469V22H13.5547V14H16.5547L17.5547 10H13.5547V7C13.5547 6.73478 13.6601 6.48043 13.8476 6.29289C14.0351 6.10536 14.2895 6 14.5547 6H17.5547V2Z" stroke="white" stroke-linecap="square" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a href="#" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                    <path d="M12.5547 16C13.6156 16 14.633 15.5786 15.3831 14.8284C16.1333 14.0783 16.5547 13.0609 16.5547 12C16.5547 10.9391 16.1333 9.92172 15.3831 9.17157C14.633 8.42143 13.6156 8 12.5547 8C11.4938 8 10.4764 8.42143 9.72626 9.17157C8.97612 9.92172 8.55469 10.9391 8.55469 12C8.55469 13.0609 8.97612 14.0783 9.72626 14.8284C10.4764 15.5786 11.4938 16 12.5547 16Z" stroke="white" stroke-linecap="square" stroke-linejoin="round"/>
+                                    <path d="M3.55469 16V8C3.55469 6.67392 4.08147 5.40215 5.01916 4.46447C5.95684 3.52678 7.22861 3 8.55469 3H16.5547C17.8808 3 19.1526 3.52678 20.0902 4.46447C21.0279 5.40215 21.5547 6.67392 21.5547 8V16C21.5547 17.3261 21.0279 18.5979 20.0902 19.5355C19.1526 20.4732 17.8808 21 16.5547 21H8.55469C7.22861 21 5.95684 20.4732 5.01916 19.5355C4.08147 18.5979 3.55469 17.3261 3.55469 16Z" stroke="white" stroke-linecap="square" stroke-linejoin="round"/>
+                                    <path d="M18.0547 6.51002L18.0647 6.49902" stroke="white" stroke-linecap="square" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <ul class="footer__bottom-list">
+                    <p>©2024 ECH JEWELRY All rights reserved</p>
+                    <a href="#">Legal mentions</a>
+                    <a href="#">Confidentiality</a>
+                    <a href="#">Cookie policy</a>
+                    <a href="#">Terms of sale</a>
+                    <a href="#">Terms of use</a>
+                    <a href="#">Sitemap</a>
+                    <a href="#">Accessibility statement</a>
+                </ul>
+                <div class="footer__bottom-lang">
+                    <p class="footer__bottom-lang--title">Language</p>
+                    <select class="footer__bottom-lang--select" name="language">
+                        <option value="fr">Français</option>
+                        <option value="en" selected>English Europe</option>
+                        <option value="de">Deutsch</option>
+                        <option value="es">Español</option>
+                        <option value="it-IT">Italiano</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
