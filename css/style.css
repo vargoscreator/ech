@@ -104,6 +104,7 @@ html,body{
     padding: 0 20px;
     margin: 0 auto;
 }
+.btn-3,
 .btn-2,
 .btn,
 button{
@@ -175,6 +176,34 @@ button{
 }
 .btn-2:hover::after{
     top: -100%;
+}
+
+.btn-3{
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: all .3s ease;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+.btn-3::after{
+    content: '';
+    position: absolute;
+    transition: all .3s ease;
+    background-color: #fff;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 100%;
+}
+.btn-3:hover{
+    background-color: #fff;
+    color: #000;
+}
+.btn-3:hover::after{
+    top: 0%;
 }
 select {
     font-family: "Futura PT", sans-serif;
@@ -5202,5 +5231,194 @@ ul.filter_selected-list li{
 @media (max-width: 479px) {
     .engraving__slide{
         height: 290px;
+    }
+}
+/* servicios */
+.servicios{
+    padding-bottom: 150px;
+    overflow: hidden;
+}
+.servicios__inner{
+    max-width: 1482px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 200px;
+}
+.servicios__title{
+    color: #000;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 68px;
+    font-weight: 400;
+    line-height: 74.8px;
+    letter-spacing: 0.68px;
+    text-transform: uppercase;
+}
+.servicios__block{
+    margin-top: 23px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 528px;
+    gap: 60px;
+}
+.servicios__item{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.servicios__item-title{
+    font-size: 40px;
+    line-height: normal;
+    color: #fff;
+}
+.servicios__item-image{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+.servicios__item-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.servicios__item-image::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background-color: hsla(0, 0%, 0%, 0.2);
+}
+.servicios__item .servicios__item-btn{
+    padding: 5px 20px;
+    font-size: 18px;
+    letter-spacing: 0;
+}
+.servicios__item:hover .servicios__item-btn{
+    background-color: #fff;
+    color: #000;
+}
+.servicios__item:hover .servicios__item-btn::after{
+    top:  0%;
+}
+@media (max-width: 1279px) {
+    .servicios__inner {
+        padding: 0;
+    }
+}
+@media (max-width: 999px) {
+
+}
+@media (max-width: 767px) {
+    .servicios{
+        padding-bottom: 100px;
+    }
+    .servicios__title{
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .servicios__block{
+        grid-template-columns: 1fr;
+        grid-auto-rows: 308px;
+        gap: 40px;
+    }
+}
+@media (max-width: 479px) {
+    .servicios__item-title{
+        font-size: 32px;
+    }
+}
+/* serviciosarticle */
+.serviciosarticle{
+    padding-bottom: 262px;
+    overflow: hidden;
+}
+.serviciosarticle__inner{
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+.serviciosarticle__title {
+    color: #000;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 68px;
+    font-weight: 400;
+    line-height: 68px;
+    letter-spacing: 0.68px;
+    text-transform: uppercase;
+}
+.serviciosarticle__block{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-top: 100px;
+}
+.serviciosarticle__block-reverse{
+    flex-direction: row-reverse;
+}
+.serviciosarticle__block-image{
+    height: 400px;
+    width: 100%;
+    max-width: 400px;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.serviciosarticle__block-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.serviciosarticle__block-title{
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+}
+.serviciosarticle__block-descr{
+    margin-top: 30px;
+}
+.serviciosarticle__block-link{
+    max-width: max-content;
+    padding: 5px 25px;
+    margin-top: 30px;
+    height: 30px;
+}
+@media (max-width: 1279px) {
+}
+@media (max-width: 999px) {
+    .serviciosarticle{
+        padding-bottom: 200px;
+    }
+}
+@media (max-width: 767px) {
+    .serviciosarticle{
+        padding-bottom: 100px;
+    }
+    .serviciosarticle__block{
+        flex-direction: column;
+        margin-top: 23px;
+    }
+    .serviciosarticle__block-image {
+        width: 100%;
+        max-width: 100%;
+        min-width: auto;
+    }
+    .serviciosarticle__block + .serviciosarticle__block{
+        margin-top: 60px;
+    }
+}
+@media (max-width: 479px) {
+    .serviciosarticle__block-image{
+        height: 300px;
     }
 }
