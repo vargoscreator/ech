@@ -3339,29 +3339,32 @@ header:not(.header-search-open) .header__search-form--inner{
     position: relative;
     z-index: 1;
 }
-.news__image-title{
+.news__image-title {
     position: absolute;
     z-index: -1;
+    top: 0;
+    left: 0;
     color: rgba(0, 0, 0, 0.20);
-    text-align: center;
     font-family: "Bebas Neue", sans-serif;
-    font-size: 136px;
-    font-style: normal;
+    font-size: 120px;
     font-weight: 400;
-    line-height: 163px;
     letter-spacing: 1.36px;
     text-transform: uppercase;
-    top: 50%;
-    transform: translateX(160px) translateY(-50%) rotate(-90deg);
-    left: -238px;
-    display: flex;
-    align-items: start;
+    white-space: nowrap;
+    line-height: 1;
+    transform: rotate(-90deg) translateX(-100%);
+    transform-origin: top left; 
     transition: all 1s ease-in-out;
     opacity: 0;
 }
 .news__content.animated .news__image-title{
-    transform: translateX(0px) translateY(-50%) rotate(-90deg);
+    left: -160px;
     opacity: 1;
+}
+.news__content:not(:first-of-type) .news__image-title {
+    top: 50%;
+    left: -44px;
+    transform: rotate(-90deg) translate(-50%, -100%);
 }
 .news__slider{
     overflow: hidden;
@@ -3749,7 +3752,7 @@ header:not(.header-search-open) .header__search-form--inner{
     color: rgba(0, 0, 0, 0.20);
     text-align: center;
     font-family: "Bebas Neue", sans-serif;
-    font-size: 136px;
+    font-size: 120px;
     font-style: normal;
     font-weight: 400;
     line-height: 163px;
@@ -3757,7 +3760,10 @@ header:not(.header-search-open) .header__search-form--inner{
     text-transform: uppercase;
     bottom: 43px;
     transform: translateX(200px) rotate(-90deg);
-    left: -298px;
+    white-space: nowrap;
+    transform-origin: left top;
+    line-height: 1;
+    left: -160px;
     display: flex;
     align-items: start;
     transition: all 1s ease-in-out;
@@ -3767,6 +3773,7 @@ header:not(.header-search-open) .header__search-form--inner{
     transform: translateX(0px) rotate(-90deg);
     opacity: 1;
 }
+
 @media (max-width: 1279px) {
     .article__inner{
         padding: 0 120px;
